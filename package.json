@@ -1,0 +1,23 @@
+{
+  "name": "8.segunda-pre-entrega",
+  "version": "1.0.0",
+  "description": "Proyecto de segunda pre-entrega",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Walter",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.1.3",
+    "mongoose-paginate-v2": "^1.8.0",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

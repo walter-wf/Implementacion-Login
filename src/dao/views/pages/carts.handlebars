@@ -1,0 +1,16 @@
+<div class=" mt-10 mx-10 px-5 py-10">
+  <h1 class="font-bold text-2xl">Productos en el carro</h1>
+  {{#each cart}}
+  <div class="border my-5 rounded px-5 py-5 shadow shadow-gray-50 hover:scale-105 duration-500">
+    <h3 class="font-bold text-xl">{{this.id_prod.title}}</h3>
+    <p class="text-xl">Description: {{this.id_prod.description}}</p>
+    <p class="text-xl">Precio: ${{this.id_prod.price}} /Mo</p>
+    <ul class="my-4">
+      {{#each this.id_prod.includes}}
+      <li class="text-lg">{{this}}</li>
+      {{/each}}
+    </ul>
+    <p class="text-xl">Cantidad: {{this.quantity}}</p>
+  </div>
+  {{/each}}
+</div>

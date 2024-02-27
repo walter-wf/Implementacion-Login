@@ -1,0 +1,40 @@
+<nav>
+  <div class="container mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <a href="#" class="text-xl font-bold ">Electro - Land</a>
+
+      <ul class="flex space-x-4">
+        <li>
+          <a href="/home" class="text-gray-200 hover:text-red-300">Home</a>
+        </li>
+        <li>
+          <a href="/products" class="text-gray-200 hover:text-red-300">Products</a>
+        </li>
+        <li>
+          <a href="/realtimeproducts" class="text-gray-200 hover:text-red-300">Real Time products</a>
+        </li>
+        <li>
+          <a href="/chat" class="text-gray-200 hover:text-red-300">Chat</a>
+        </li>
+        <li>
+         
+          <a id="cartLink" href="#" class="text-gray-200 hover:text-red-300">Carro de Compras</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+
+  const cartId = localStorage.getItem('cartId');
+
+  if (cartId) {
+    const cartURL = `/carts/${cartId}`;
+
+    const cartLink = document.getElementById('cartLink');
+
+    cartLink.href = cartURL;
+  }
+</script>

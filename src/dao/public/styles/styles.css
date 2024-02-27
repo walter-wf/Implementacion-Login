@@ -1,0 +1,77 @@
+body{
+  background-color: #141414 !important;
+  color: #f4f4f4;
+}
+
+.modal-no-background.modal {
+  background: transparent !important;
+}
+
+.modal-no-background .modal-dialog {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  max-width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Chat */
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: flex-end;
+}
+
+.userInfoChat {
+  display: flex;
+}
+
+.userMessage {
+  display: block;
+}
+
+.liParrafosMensajes {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  div {
+      grid-column-start: 1;
+  }
+}
+
+.spanContainer {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.userMessage {
+  grid-column-start: 2;
+  grid-column: span 2 / 4;
+}
+
+.sendContainer {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.ulParrafosMensajes {
+  flex-grow: 1;
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.textInput {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #7a7a7abd;
+  border-radius: 5px;
+}
