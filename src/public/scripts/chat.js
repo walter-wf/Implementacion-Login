@@ -30,7 +30,7 @@ btnChat.addEventListener("click", () => {
 });
 
 socket.on("showMessages", (messages) => {
-    parrafosMensajes.innerHTML = ""; // Limpiar mensajes anteriores
+    parrafosMensajes.innerHTML = ""; 
     messages.forEach(message => {
         displayMessage(message);
     });

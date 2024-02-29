@@ -3,7 +3,7 @@ import handlebars from "express-handlebars";
 import path from "path";
 import { createServer } from "node:http";
 import { Server } from "socket.io";
-import { __dirname } from "./path.js";
+import { __dirname } from "../path.js";
 import { connectionToDB } from "./dao/db/dbConnection.js";
 
 import { prodRouter } from "./routes/endpoints/products.routes.js";
