@@ -1,0 +1,6 @@
+export * from './cart.views.routes.js'
+export * from './chat.views.routes.js'
+export * from './home.views.routes.js'
+export * from './products.views.routes.js'
+export * from './realTimeProducts.views.routes.js'
+export * from './auth.views.routes.js'
